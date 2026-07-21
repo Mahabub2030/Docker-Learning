@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "Welcome to the Docker!!! ",
+    message: "Welcome to the Docker!!!.... ",
   });
 });
 
@@ -20,7 +20,7 @@ app.get("/error", (req, res) => {
   throw new Error("This is a forced error");
 });
 
-//error handling
+//error handlingdokce
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   console.log(err);
   res.status(500).json({
